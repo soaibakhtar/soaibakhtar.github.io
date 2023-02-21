@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.fc53c8dd.css",
-    "main.js": "/static/js/main.61bdeabf.js",
+    "main.js": "/static/js/main.c858af74.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Md_Soaib Akhtar_Resume .pdf": "/static/media/Md_Soaib Akhtar_Resume .4bbff05fb2b8bfaeec27.pdf",
     "static/media/Profile.png": "/static/media/Profile.ca6826e3e4d43cf1aba3.png",
     "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "index.html": "/index.html",
     "main.fc53c8dd.css.map": "/static/css/main.fc53c8dd.css.map",
-    "main.61bdeabf.js.map": "/static/js/main.61bdeabf.js.map",
+    "main.c858af74.js.map": "/static/js/main.c858af74.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc53c8dd.css",
-    "static/js/main.61bdeabf.js"
+    "static/js/main.c858af74.js"
   ]
 }
