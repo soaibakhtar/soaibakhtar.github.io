@@ -7,6 +7,7 @@ import Skills from "./Components/Container/Skills/Skills"
 import Portfolio from "./Components/Container/Portfolio/Portfolio"
 import Contact from "./Components/Container/Contact/Contact"
 import Footer from "./Components/Container/Footer/Footer"
+import Github from './Components/Container/Github/Github';
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
      <Home/>
      <About/>
      <Skills/>
+     <Github/>
      <Portfolio/>
      <Contact/>
      <Footer/>

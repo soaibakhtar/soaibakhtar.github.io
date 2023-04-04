@@ -1,20 +1,21 @@
 .workImages {
     margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 1rem;
     
     @media screen and(max-width: 800px) {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     
     @media screen and(max-width: 600px) {
         grid-template-columns: 1fr;
     }
 
-    .workImage {
-        max-width: 400px;
-        height: 470px;
+    .github {
+        border: 1px solid yellow;
+        max-width: 1200px;
+        // height: 470px;
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -26,7 +27,7 @@
         box-shadow: 0 0 10px #8c12f0;
         gap: 40px;
         @media screen and(max-width:600px) {
-            max-width: 350px;
+            // max-width: 350px;
         }
 
         img {
@@ -124,4 +125,3 @@
         }
     }
 }
-

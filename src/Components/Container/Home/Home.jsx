@@ -27,7 +27,7 @@ function Home() {
     }
     >
 
-      <div className="profile">
+      <div className="profile" id='home'>
         <img src={Profile} alt="Profile Pic" />
       </div>
 

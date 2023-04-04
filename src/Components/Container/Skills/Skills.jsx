@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import "./Skills.scss"
-import { experiences, finishes, icons } from '../../../data'
+import { experiences, finishes, icons, iconsName } from '../../../data'
 function Skills() {
   const [active,setActive] = useState(1)
   return (
@@ -39,12 +39,15 @@ function Skills() {
         <motion.div
         initial={{opacity:0}}
         whileInView={{y : [-50,0],opacity:1}}
-        className="skills"
+        className="skill skills-card"
         >
           {active===1 && icons.map((icon,index)=>{
             return (
-              <div key={index} className="tools">
+              <div key={index} className="tools skills-card-img">
+        
                 {icon}
+                <p className='skills-card-name'>{iconsName[index]}</p>
+                
               </div>
             )
           })}
