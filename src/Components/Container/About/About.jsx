@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Profile from "../../../Assets/Profile.png";
 import { bios } from "../../../data";
 import "./About.scss";
-import Md_Soaib_Akhtar from "../../../Assets/Md_Soaib Akhtar_Resume .pdf";
 function About() {
   return (
     <div className="container about section" id="about">
@@ -39,12 +38,9 @@ function About() {
           transition={{ duration: 1 }}
         >
           <p id="user-detail-intro">
-            A Skilled full stack developer with a specialization in MERN stack
-            and have worked through 2000+ hrs in learning and building projects
-            using a variety of powerful skills. Also Completed 100+ hrs of Soft
-            Skill Training. quick learner who can quickly adapt to new
-            environments. Looking for a challenging role in the industry to
-            utilize skills and learn.
+          A passionate and adaptable full stack web developer, skilled in React,JavaScript, Node JS, Express, MongoDB,
+            with proficiency in problem-solving. A dependable and responsible team player with an eye to detail. Looking
+            for a position to enhance once skills while significantly contributing to the company's growth.
           </p>
           {bios.map((bio) => {
             return (
@@ -59,20 +55,20 @@ function About() {
               </div>
             );
           })}
+          
           <motion.a
-            href="https://drive.google.com/file/d/11dO2FSrJv_KBJfxtXPfnDRrNgxzZwuri/view?usp=share_link"
+            href="https://drive.google.com/uc?id=11dO2FSrJv_KBJfxtXPfnDRrNgxzZwuri&export=download"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/uc?export=download&id=11dO2FSrJv_KBJfxtXPfnDRrNgxzZwuri",
-                "_blank"
-              )
-            }
-            id="resume-link-2"
+            target="_blank"
+            rel="noreferrer"
+            download="Md_Soaib_Akhtar_Resume.pdf"
+            id="resume-button-2"
+            className="nav-link resume"
           >
             Download Resume
           </motion.a>
+          
         </motion.div>
       </div>
     </div>

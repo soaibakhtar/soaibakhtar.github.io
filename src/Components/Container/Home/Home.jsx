@@ -44,13 +44,13 @@ function Home() {
           Connect with me
         </motion.a>
         <div className="web">
-          Web Developer
+        Back-end developer
         </div>
         <div className="ui">
-          UI/UX Designer
+          Front-end Developer
         </div>
         <div className="freelance">
-          Freelancer
+          Full-stack Developer
         </div>
       </div>
     </motion.div>

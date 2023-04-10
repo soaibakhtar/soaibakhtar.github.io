@@ -5,6 +5,7 @@ import "./Navbar.scss"
 import {motion} from "framer-motion"
 import { useState } from 'react'
 import { useEffect } from 'react'
+import SALOGO from "../../Assets/SALOGO.png"
 const Navbar = () => {
 
     const [scroll, setScroll] = useState(false);
@@ -48,19 +49,14 @@ const Navbar = () => {
           className={scroll ? "header active" : "header"}>
           <div className="Nav_container" id='nav-menu'>
               <div className="logo">
-                    <img src="https://avatars.githubusercontent.com/u/98397413?v=4" alt="ProfileImg" />
+                    <img src={SALOGO} alt="ProfileImg" />
               </div>
               <ul
                       className="nav_links"
                    >
                   {navLinks.map((navlink,index) => {
                       return <li key={index} className={clName[index] } >
-                        {navLinks.length-1===index?<a  href='https://drive.google.com/file/d/11dO2FSrJv_KBJfxtXPfnDRrNgxzZwuri/view?usp=share_link'    onClick={() =>
-              window.open(
-                "https://drive.google.com/uc?export=download&id=11dO2FSrJv_KBJfxtXPfnDRrNgxzZwuri",
-                "_blank"
-              )
-            } id="resume-button-1">{navLinks[navLinks.length-1]}</a>:<a href={`#${navlink}`}>{navlink}</a>}
+                        {navLinks.length-1===index?<a  href='https://drive.google.com/file/d/11dO2FSrJv_KBJfxtXPfnDRrNgxzZwuri/view?usp=sharing' target="_blank" rel="noreferrer" download="Md_Soaib_Akhtar_Resume.pdf"  id="resume-button-1">{navLinks[navLinks.length-1]}</a>:<a href={`#${navlink}`}>{navlink}</a>}
                         </li>
                   })}
               </ul>
